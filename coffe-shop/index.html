@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birchwood Coffee — Small Batch Roasters</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark">☕</span>
+        <span class="logo-text">Birchwood Coffee</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Roasted in small batches since 2009</p>
+      <h1>Good coffee,<br />made slowly.</h1>
+      <p class="hero-text">
+        We roast every Tuesday and Friday. Beans are on the shelf within three days,
+        and in your cup within five minutes.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">See the menu</a>
+        <a href="#visit" class="btn btn-ghost">Find us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="section" id="menu">
+    <div class="container">
+      <h2 class="section-title">Menu</h2>
+      <p class="section-sub">Prices include tax. Oat, soy, and whole milk at no extra charge.</p>
+
+      <div class="filters" id="filters">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="tea">Tea</button>
+        <button class="filter-btn" data-filter="pastry">Pastry</button>
+      </div>
+
+      <ul class="menu-list" id="menuList">
+        <li class="menu-item" data-category="coffee">
+          <div class="menu-item-head">
+            <h3>Espresso</h3>
+            <span class="price">$3.00</span>
+          </div>
+          <p>Two ounces. Dense, syrupy, a little sweet.</p>
+        </li>
+
+        <li class="menu-item" data-category="coffee">
+          <div class="menu-item-head">
+            <h3>Flat White</h3>
+            <span class="price">$4.25</span>
+          </div>
+          <p>Double ristretto with silky steamed milk.</p>
+        </li>
+
+        <li class="menu-item" data-category="coffee">
+          <div class="menu-item-head">
+            <h3>Pour Over</h3>
+            <span class="price">$4.75</span>
+          </div>
+          <p>Single origin, brewed to order. Ask what's on the bar today.</p>
+        </li>
+
+        <li class="menu-item" data-category="coffee">
+          <div class="menu-item-head">
+            <h3>Cold Brew</h3>
+            <span class="price">$4.50</span>
+          </div>
+          <p>Steeped eighteen hours. Served over one big cube.</p>
+        </li>
+
+        <li class="menu-item" data-category="tea">
+          <div class="menu-item-head">
+            <h3>Sencha Green</h3>
+            <span class="price">$3.75</span>
+          </div>
+          <p>Grassy and clean. Brewed at 170°F so it never turns bitter.</p>
+        </li>
+
+        <li class="menu-item" data-category="tea">
+          <div class="menu-item-head">
+            <h3>Masala Chai</h3>
+            <span class="price">$4.25</span>
+          </div>
+          <p>Cardamom, clove, ginger, black pepper. Simmered, not powdered.</p>
+        </li>
+
+        <li class="menu-item" data-category="tea">
+          <div class="menu-item-head">
+            <h3>Peppermint</h3>
+            <span class="price">$3.50</span>
+          </div>
+          <p>Loose leaf, caffeine free, good after dinner.</p>
+        </li>
+
+        <li class="menu-item" data-category="pastry">
+          <div class="menu-item-head">
+            <h3>Butter Croissant</h3>
+            <span class="price">$3.75</span>
+          </div>
+          <p>Laminated over three days. Baked at 6am daily.</p>
+        </li>
+
+        <li class="menu-item" data-category="pastry">
+          <div class="menu-item-head">
+            <h3>Almond Biscotti</h3>
+            <span class="price">$2.50</span>
+          </div>
+          <p>Twice baked, hard on purpose. Built for dipping.</p>
+        </li>
+
+        <li class="menu-item" data-category="pastry">
+          <div class="menu-item-head">
+            <h3>Cinnamon Roll</h3>
+            <span class="price">$4.50</span>
+          </div>
+          <p>Cream cheese glaze, warmed on request.</p>
+        </li>
+      </ul>
+
+      <p class="menu-empty" id="menuEmpty" hidden>Nothing in that category right now.</p>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section section-alt" id="about">
+    <div class="container about-grid">
+      <div>
+        <h2 class="section-title">About us</h2>
+        <p>
+          Birchwood started as a cart outside the train station with one grinder and
+          a bad extension cord. Fifteen years later we're still doing the same thing,
+          just with better equipment and a roof.
+        </p>
+        <p>
+          We buy green coffee directly from six farms, roast it ourselves in the back
+          room, and pull shots on a machine that gets serviced more often than my car.
+          If a batch doesn't taste right, it doesn't go on the shelf.
+        </p>
+
+        <ul class="stats">
+          <li><strong>6</strong><span>Farm partners</span></li>
+          <li><strong>2</strong><span>Roast days a week</span></li>
+          <li><strong>15</strong><span>Years on the corner</span></li>
+        </ul>
+      </div>
+
+      <aside class="about-card">
+        <h3>Today's roast</h3>
+        <p class="roast-name">Ethiopia — Guji Highlands</p>
+        <p>Washed heirloom varietals. Tasting notes of apricot, jasmine, and honey.</p>
+        <p class="roast-meta">Roasted: <span id="roastDate">—</span></p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="section" id="visit">
+    <div class="container">
+      <h2 class="section-title">Visit</h2>
+      <div class="visit-grid">
+        <div class="visit-card">
+          <h3>Hours</h3>
+          <ul class="hours" id="hoursList">
+            <li data-day="1"><span>Monday</span><span>7:00 – 18:00</span></li>
+            <li data-day="2"><span>Tuesday</span><span>7:00 – 18:00</span></li>
+            <li data-day="3"><span>Wednesday</span><span>7:00 – 18:00</span></li>
+            <li data-day="4"><span>Thursday</span><span>7:00 – 20:00</span></li>
+            <li data-day="5"><span>Friday</span><span>7:00 – 20:00</span></li>
+            <li data-day="6"><span>Saturday</span><span>8:00 – 20:00</span></li>
+            <li data-day="0"><span>Sunday</span><span>8:00 – 16:00</span></li>
+          </ul>
+        </div>
+
+        <div class="visit-card">
+          <h3>Where</h3>
+          <p>
+            148 Birchwood Lane<br />
+            Corner of 4th &amp; Birchwood<br />
+            Portland, OR 97209
+          </p>
+          <p class="muted">
+            Two blocks from the streetcar. No parking lot, but there's
+            metered parking on 4th.
+          </p>
+        </div>
+
+        <div class="visit-card">
+          <h3>Good to know</h3>
+          <ul class="plain-list">
+            <li>Free wifi, no password</li>
+            <li>Dogs welcome on the patio</li>
+            <li>Bring your own cup, get 50¢ off</li>
+            <li>Whole beans for sale at the counter</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-wrap">
+      <div class="contact-intro">
+        <h2 class="section-title">Get in touch</h2>
+        <p>Questions about catering, wholesale beans, or a lost umbrella? Send a note.</p>
+        <p class="muted">
+          Or call us at <a href="tel:+15035550142">(503) 555-0142</a>.
+          We answer between 7am and 6pm.
+        </p>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" />
+          <small class="error" data-error-for="name"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" />
+          <small class="error" data-error-for="email"></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us what you need..."></textarea>
+          <small class="error" data-error-for="message"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Birchwood Coffee. All rights reserved.</p>
+      <p>148 Birchwood Lane, Portland, OR</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
